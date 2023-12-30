@@ -1,0 +1,143 @@
+/* Reset some default styles for consistency */
+/* Default font size for larger screens */
+body {
+  font-size: 16px;
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2C3E50; /* Sexy dark blue background color */
+  color: #FFFFFF; /* White text color */
+}
+
+header {
+  background-color: #2980B9; /* Sexy blue header background color */
+  color: #FFFFFF; /* White header text color */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+main {
+  padding: 0;
+}
+
+footer {
+  background-color: #2C3E50; /* Sexy dark blue footer background color */
+  color: #FFFFFF; /* White footer text color */
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Customize the look of sections for a sexy feel */
+section {
+  background-color: #2b202b; /* Sexy blue section background color */
+  color: #FFFFFF; /* White section text color */
+  padding: 0; 
+  margin: 0;
+}
+
+main{
+  background-color: gold;
+}
+/* Example of customizing links to resemble sexy blue links */
+a {
+  color: #2980B9; /* Sexy blue link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFFFFF; /* Hover color change to white */
+}
+
+/* Customizing buttons to look sexy */
+button {
+  background-color: #E74C3C; /* Sexy red button background color */
+  color: #FFFFFF; /* White button text color */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #C0392B; /* Hover color change to darker red */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, span, div, li {
+  text-align: center;
+}
+
+/* If you want to center text inside a specific container, you can do this: */
+
+/* If you want to center text horizontally only, you can use margin property: */
+.center-text {
+  margin: 0 auto;
+}
+
+/* Center the bullet points for unordered lists */
+ul {
+  list-style-position: inside;
+}
+
+/* Center the numbers for ordered lists */
+ol {
+  list-style-position: inside;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+.column:hover {
+  background-color: rgb(64, 10, 10);
+  border: rgb(72, 3, 3) solid 2px;
+  border-radius: 3%;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (max-width:500) {
+  .cinema{
+    display: none;
+  }
+}
