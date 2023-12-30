@@ -3,75 +3,209 @@
 
 <head>
     <title>Hassan-i.org</title>
-    <link href="./general.css">
-    </style>
     <meta charset="UTF-8">
+    <meta name="author" content="JvR">
+    <meta name="description" content="Persian based Nizari Brotherhood">
+    <meta name="keywords" content="mentoring,assassin creed,Nizari,ghengis khan,warefare, Saladin,hassan i sabbah,jvr, ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DGQM7F2F2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DGQM7F2F2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-3DGQM7F2F2');
-</script>
+        gtag('config', 'G-3DGQM7F2F2');
+    </script>
 </head>
 
 <body>
-    <header>
-        <h1>Hassan-i Sabbah</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contacts.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <div>
+                <a href="#" class="navbar-brand">Hassan-i Sabbah</a>
 
-    <main class="content">
-        <section>
-            <h2>Now I Am Become Death, the Destroyer of Worlds -Oppenheimer</h2><br>
-            <!-- You can add more content here -->
-            <p>
-                <strong>Nothing is true.</strong> <br>
-                    Beware of <i>dogma</i> spread by groups, even smalls ones of two.<br>
-                    
-                    <strong>Everything is permitted.</strong><br>
-                    Laws and Morality changes while <i>corruption</i> is inevitable in the collected.<br>   
-                        So why live in a place where only the <i>rich</i> can access it?
-            </p>
-        </section>
-        <div class="container" id="cinema" name="oppenheimer.mp4">
-
-            <div id='games' class="column">
-                <h2>Games</h2>
-                <ul>
-                    <li><a href="">Street Fighter</a></li>
-                    <li><a href="">Tower Defence</a></li>
-                    <li><a href="">AIK: Adventurer in Kyoto</a></li>
-                </ul>
             </div>
-            <div id='encryption' class="column">
-                <h2>Encryption</h2>
-                <ul>
-                    <li><a href="">Anagram Cypher</a></li>
-                    <li><a href="">Tower of Babel</a></li>
-                    <li><a href="">3301</a></li>
-                </ul>
-            </div>
-            <div id='websites' class="column">
-                <h2>Websites</h2>
-                <ul>
-                    <li><a href="www.thecryptolanthropist.com">www.thecryptolanthropist.com</a></li>
-                    <li><a href="https://gideonbravegogogo.github.io/partyarchitects/">www.thepartyarchitects.com</a></li>
-                    <li><a href=""></a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="#articles_one" class="nav-link">Latest</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </div>
         </div>
+    </nav>
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
 
+                    <h2>Join the <span class="text-warning">Fida'i</span> Brotherhood: </h2>
+                    <p class="lead my-4">the enduring history of the Nizari Isma'ilis.</p>
+                    <button class="btn btn-primary btn-lg bg-dark text-light" data-bs-toggle="modal" data-bs-target="#Enroll">Embrace the enigma</button>
+                    </div>
+                <img class="img-fluid" style="max-width: 600PX;" src="images/Hassan4.jfif" alt="">
+            </div>
+        </div>
+    </section>
+    <main class="content bg-light">
+        <section style="font-size: x-large;">
+            <h2>"While the winds of change may alter the landscape, it is the rooted tree of wisdom that withstands the
+                storm and bears the fruits of enlightenment."</h2><br>
+            <!-- You can add more content here -->
+            <p>
+                When other men blindly follow the truth, remember;
+                <strong>Nothing is true.</strong> <br>
+                When other men are limited by morality and law, remember;
+                <strong>Everything is permitted.</strong><br>
+            </p>
+        </section>
 
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 bg-dark text-md-start align-items-center justify-content-center">
+                        <h1>The road to Alamut</h1>
+                        <p class="lead text-light">The sun dipped low, casting elongated shadows on the dusty ground
+                            as Farida wandered through the lively market. The scents of exotic spices mingled with
+                            the chatter of merchants haggling over wares. Farida's stomach growled, a reminder of
+                            her perpetual quest for sustenance.<br><br>
+
+                            In her search for something to eat, Farida navigated the maze of stalls, eyes scanning
+                            the vibrant chaos. A sudden collision disrupted her solitary mission. Amid the bustling
+                            market, she found herself face-to-face with a mysterious figure whose face was hidden
+                            behind a mask, revealing only his keen eyes. His eyes, a mesmerizing hue reminiscent of
+                            a gypsy's chant, held a captivating charm that transcended their wordless encounter. A
+                            turban adorned his head, giving an air of enigma to his presence.<br><br>
+
+                            "No harm done," Farida replied, brushing off the dust from her worn clothes. The masked
+                            stranger, wordless and with only a nod, seemed to share her quest for anonymity amidst
+                            the crowd.</p>
+                    </div>
+                    <div class="col-md-5 bg-dark align-items-center justify-content-center">
+                        <p>
+
+                            As they strolled through the market together, their silence spoke volumes. Farida
+                            couldn't discern the man's name or origin, but there was an unspoken understanding
+                            between them. The stranger led her through narrow alleys, a tacit invitation to explore
+                            beyond the market's surface.<br><br>
+
+                            The color of his eyes, like a gypsy's enchanting chant, held Farida in a trance. The
+                            tales he wove—stories of distant lands and hidden mountain retreats—seemed to echo
+                            through the depths of her soul. Alamut, he called it, a place of refuge from the chaos
+                            of the world. His eyes, a conduit of unspoken desires, conveyed a longing for something
+                            more profound, something that resonated with Farida's own yearning for sustenance beyond
+                            the mere filling of her stomach.</p>
+                        <img src="images/Saladin2.jfif" class="img-fluid" alt="" srcset="">
+                    </div>
+                    <div class="col-md-2 bg-dark align-items-center justify-content-center">
+                        <p>
+
+                            As they eventually parted ways, the masked stranger slipped into the labyrinth of the
+                            market's shadows. Farida continued her quest for food, the scent of spices lingering in
+                            the air. The encounter left an indelible mark, and as she pondered the mysterious tales
+                            of Alamut, the dusty roads ahead seemed to beckon her toward an uncharted destination.
+                            The masked man's presence, like a gust of wind that had briefly touched her, left Farida
+                            with a sense of curiosity that extended beyond the immediate needs of hunger.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md bg-dark d-flex">
+                        <div id='games' class="column">
+                            <h2>Games</h2>
+                            <ul>
+                                <li><a data-tip=" creating..." href="">Street Fighter</a></li>
+                                <li><a data-tip=" creating..." href="">Tower Defence</a></li>
+                                <li><a data-tip=" creating..." href="">AIK: Adventurer in Kyoto</a></li>
+                            </ul>
+                        </div>
+                        <div id='encryption' class="column">
+                            <h2>Encryption</h2>
+                            <ul>
+                                <li><a data-tip=" creating..." href="">Anagram Cypher</a></li>
+                                <li><a data-tip=" creating..." href="">Tower of Babel</a></li>
+                                <li><a data-tip=" creating..." href="">3301</a></li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h1>Cold Winter</h1>
+                            <audio controls autoplay loop>
+                                <source src="music/blood-brothers.mp3">
+                                <source src="music/cold-winter.mp3">
+                            </audio>
+                        </div>
+                        <div class="column"><img src="./images/Khan.jfif" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 bg-dark text-md-start align-items-center justify-content-center">
+                        <h2>The Masked Guide</h2>
+                        <p class="lead text-light">Farida's steps were guided not only by the scent of spices but also
+                            by the memory of the mysterious encounter in the market. As she weaved through the narrow
+                            streets, the colorful fabrics hanging from stalls seemed to dance in rhythm with her
+                            contemplation.</p>
+                        <img src="images/Saladin3.jfif" class="img-fluid" alt="" srcset="">
+                    </div>
+                    <div class="col-md-4 bg-dark align-items-center justify-content-center">
+                        <p>In the midst of the labyrinth, the masked stranger emerged again from the shadows, a figure
+                            cloaked in the history of the Middle East. His eyes, like a gypsy's chant, met Farida's, and
+                            without a word, he beckoned her to follow. The turban on his head hinted at a silent wisdom,
+                            a relic from the days when Persia was a tapestry of cultures and influences.<br><br>
+
+                            The journey led them beyond the market, through hidden paths and forgotten corners,
+                            reminiscent of the time when the Seljuk Empire stretched across the region. The stranger's
+                            eyes, their color deepening with the shifting hues of the day, spoke of stories untold and
+                            mysteries yet to unfold. Farida couldn't help but notice the concealed hilt of a dagger at
+                            his side—a symbol of the asymmetric warfare known to the <b>Fida'is</b> , the secret society
+                            devoted
+                            to Nizari Isma'ilism.</p>
+                    </div>
+                    <div class="col-md-5 bg-dark align-items-center justify-content-center">
+                        <p>At the edge of the city, where the clamor of the market faded into the whispers of the wind,
+                            the stranger halted. His eyes, now bathed in the warm glow of the setting sun, conveyed a
+                            sense of purpose. Without revealing his name, he spoke of a place called Alamut—a fortress
+                            that had witnessed the ebb and flow of empires, a stronghold of the Nizari Isma'ilis during
+                            times of warfare and strategic intrigue.<br><br>
+
+                            The masked guide's stories painted Alamut not just as a sanctuary but as a bastion of
+                            asymmetric warfare strategies, where the Fida'is honed their skills in the art of warfare
+                            and daggerplay. Farida felt a connection to the tales, as if the mountains themselves were
+                            calling out to her—a call to arms in the pursuit of knowledge and purpose.<br><br>
+
+                            As they stood on the outskirts of the city, the stranger gestured toward the distant peaks.
+                            The sun dipped lower, casting long shadows that seemed to whisper of a destiny intertwined
+                            with Alamut and the complex web of Shia Islam and the Fatimid Caliphate. The masked man, a
+                            guardian of enigmatic secrets, invited Farida to tread the path less taken—a path that led
+                            not only to sustenance for the soul but to the responsibilities and challenges of a Fida'i,
+                            the job of the assassin, in a world shaped by the likes of Saladin and Genghis Khan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="img-fluid" id="cinema" name="./videos/oppenheimer.mp4">
+        </div>
 
         <div class="container">
 
@@ -80,26 +214,26 @@
                 <ul>
                     <li><a href="https://mxdaratm.github.io/AkatsukiDen/Russian%20101" target="_blank">Russian101</a>
                     </li>
-                    <li><a href="">Arabic</a></li>
-                    <li><a href="">Italian</a></li>
-                    <li><a href="">Mandarin</a></li>
-                    <li><a href="">Urdu</a></li>
-                    <li><a href="">isiXhosa</a></li>
+                    <li><a data-tip=" creating..." href="">Arabic</a></li>
+                    <li><a data-tip=" creating..." href="">Italian</a></li>
+                    <li><a data-tip=" creating..." href="">Madarin</a></li>
+                    <li><a data-tip=" creating..." href="">Urdu</a></li>
+                    <li><a data-tip=" creating..." href="">isiXhosa</a></li>
                 </ul>
             </div>
             <div id='university' class="column">
                 <h2>University: Computer science</h2>
                 <ul>
                     <li><a href="">1st year</a></li>
-                    <li><a href="">2nd year</a></li>
+                    <li><a data-tip=" creating..." href="">2nd year</a></li>
                 </ul>
             </div>
             <div id='organisation' class="column">
                 <h2>Organisation</h2>
                 <ul>
-                    <li><a href="">Studying</a></li>
-                    <li><a href="">Everyday</a></li>
-                    <li><a href="">Goal setting</a></li>
+                    <li><a data-tip=" creating..." href="">Studying</a></li>
+                    <li><a data-tip=" creating..." href="">Everyday</a></li>
+                    <li><a data-tip=" creating..." href="">Goal setting</a></li>
                 </ul>
             </div>
         </div>
@@ -110,28 +244,34 @@
             <div id='memory' class="column">
                 <h2>Memory</h2>
                 <ul>
-                    <li><a href="">Anagram Cypher</a></li>
-                    <li><a href="">Tower of Babel</a></li>
-                    <li><a href="">3301</a></li>
+                    <li><a data-tip=" creating..." href="">Anagram Cypher</a></li>
+                    <li><a data-tip=" creating..." href="">Tower of Babel</a></li>
+                    <li><a data-tip=" creating..." href="">3301</a></li>
                 </ul>
             </div>
             <div id='mental' class="column">
                 <h2>Mental Health</h2>
                 <ul>
-                    <li><a href="">Physical</a></li>
-                    <li><a href="">Breathing</a></li>
-                    <li><a href="">Meditation</a></li>
+                    <li><a data-tip=" creating..." href="">Physical</a></li>
+                    <li><a data-tip=" creating..." href="">Breathing</a></li>
+                    <li><a data-tip=" creating..." href="">Meditation</a></li>
                 </ul>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Your Hassan-i. All rights reserved.</p>
+    <!-- footer section -->
+    <footer class="p-5 bg-dark text-white text-center postion-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy. Designed by JvR</p>
+            <a href="#" class="positon-absolute bottom-0 end-0 p-5 text-light">
+                <h1><i class="bi bi-arrow-up-circle"></i></h1>
+            </a>
+        </div>
     </footer>
-    <script src="./scroll.js"></script>
-    <script src="./classes.js"></script>
-    <script src="./canvaser.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./js/canvaser.js"></script>
 </body>
 
 </html>
