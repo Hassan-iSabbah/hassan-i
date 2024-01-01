@@ -1,0 +1,12 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+img{
+    filter: grayscale(100%);
+}
+
+img:active{
+    filter: none;
+}
