@@ -8,51 +8,6 @@ body::before{
         width:50%;
     }
 }
-*{
-    text-shadow: black 0.5px 0.5px 1px;
-}
-.black{
-    background-color: #121212;
-}
-
-.green{
-    background-color: #00a547;
-}
-.border-green{
-    border: 7px solid #00a547;
-}
-
-#blendImage {
-    transition: opacity 500ms ease-in-out;
-}
-#blendImage:hover {
-    border: 0.3vw solid rgba(255, 217, 0, 0.641);
-}
-
-.rain-list {
-    list-style: none;
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-}
-
-.rain-list li {
-    position: absolute;
-    animation: fall 6s ease-in-out infinite;
-}
-
-@keyframes fall {
-    0%{
-        left:  calc(random() * 70vw);
-    }
-    100% {
-        transform: translateY(110vh);
-    }
-}
-
-.carousel-item img{
-    opacity: 20%;
-}
 
 [data-tip]:hover::after{
     content: attr(data-tip);

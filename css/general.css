@@ -136,8 +136,8 @@ ol {
   text-transform: uppercase;
 }
 
-@media (max-width:500) {
+/* @media (max-width:500) {
   .cinema{
     display: none;
   }
-}
+} */
