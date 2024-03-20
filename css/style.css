@@ -1,12 +1,7 @@
 body::before{
     display: block;
     content: '';
-    height: 70px;
-}
-@media (max-width: 768) {
-    .news-input{
-        width:50%;
-    }
+    height: 5vh
 }
 
 [data-tip]:hover::after{
@@ -14,4 +9,40 @@ body::before{
     background-color: gray;
     color: black;
     font-weight: 700px;
+}
+
+.video{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.imgCenter{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: content-box;
+    object-fit: cover;
+}
+
+#alamutImage{
+    max-width: 50vw;
+}
+#burger{
+    position: fixed;
+    top: 2vh;
+    right:5vw;
+}
+
+#navmenu {
+    height: 50vh;
+}
+
+#footer{
+    position: relative;
+}
+
+.footernote{
+    position: absolute;
+    bottom: 4vw;
+    right: 2vh;
 }

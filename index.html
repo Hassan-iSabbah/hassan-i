@@ -18,6 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DGQM7F2F2"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -29,28 +30,39 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-        <div class="container">
-            <div>
-                <a href="#" class="navbar-brand">Hassan-i Sabbah</a>
+    <nav class="bg-dark navbar-dark py-3 fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <a href="#" class="navbar-brand">Hassan-i Sabbah</a>
 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <span id="burger" class="navbar-toggler-icon"></span>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="./contacts.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
-                    <li class="nav-item"><a href="#articles_one" class="nav-link">Latest</a></li>
-                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
-                </ul>
+            <div id="navmenu" class="row p-5">
+                <div class="col-md-12">
+                    <div >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="./contacts.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
+                            <li class="nav-item"><a href="#articles_one" class="nav-link">Latest</a></li>
+                            <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
+
+
         </div>
     </nav>
     <!-- Showcase -->
     <section class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
-        <div class="container">
+        <div class="container-fluid m-0">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
 
@@ -59,26 +71,24 @@
                     <button class="btn btn-primary btn-lg bg-dark text-light" data-bs-toggle="modal"
                         data-bs-target="#Enroll">Embrace the enigma</button>
                 </div>
-                <img class="img-fluid" src="images/Hassan4.jfif" alt="">
+                <img id="alamutImage" class="img-fluid" src="images/Hassan4.jfif" alt="">
             </div>
         </div>
     </section>
-    <section style="font-size: x-large;">
-        <h2>"While the winds of change may alter the landscape, it is the rooted tree of wisdom that withstands the
-            storm and bears the fruits of enlightenment."</h2><br>
-        <!-- You can add more content here -->
+    <!-- Creed -->
+    <section style="font-size: x-large;" class="bg-white text-dark p-5">
         <p>
             When other men blindly follow the truth, remember;
-            <strong>Nothing is true.</strong> <br>
+            <strong class="text-highlight">Nothing is true.</strong> <br>
             When other men are limited by morality and law, remember;
-            <strong>Everything is permitted.</strong><br>
+            <strong class="text-highlight">Everything is permitted.</strong><br>
         </p>
     </section>
-
+    <!-- Story Chapter one -->
     <section>
-        <div class="container">
+        <div class="container-fluid m-0">
             <div class="row">
-                <div class="col-md-5 bg-dark text-md-start align-items-center justify-content-between">
+                <div class="col-md-4 bg-dark text-md-start align-items-center justify-content-between py-5">
                     <h1>The road to Alamut</h1>
                     <p class="lead text-light">The sun dipped low, casting elongated shadows on the dusty ground
                         as Farida wandered through the lively market. The scents of exotic spices mingled with
@@ -96,7 +106,7 @@
                         stranger, wordless and with only a nod, seemed to share her quest for anonymity amidst
                         the crowd.</p>
                 </div>
-                <div class="col-md-5 bg-dark align-items-center justify-content-center">
+                <div class="col-md-5 bg-dark align-items-center justify-content-center py-5">
                     <p>
 
                         As they strolled through the market together, their silence spoke volumes. Farida
@@ -112,7 +122,7 @@
                         the mere filling of her stomach.</p>
                     <img src="images/Saladin2.jfif" class="img-fluid" alt="" srcset="">
                 </div>
-                <div class="col-md-2 bg-dark align-items-center justify-content-center">
+                <div class="col-md-3 bg-dark align-items-center justify-content-center py-5">
                     <p>
 
                         As they eventually parted ways, the masked stranger slipped into the labyrinth of the
@@ -156,29 +166,27 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 bg-dark text-md-start align-items-center justify-content-center">
+                <div class="col-md-6 bg-dark text-md-start align-items-center justify-content-center">
                     <h2>The Masked Guide</h2>
                     <p class="lead text-light">Farida's steps were guided not only by the scent of spices but also
                         by the memory of the mysterious encounter in the market. As she weaved through the narrow
                         streets, the colorful fabrics hanging from stalls seemed to dance in rhythm with her
                         contemplation.</p>
+                        <p>In the midst of the labyrinth, the masked stranger emerged again from the shadows, a figure
+                            cloaked in the history of the Middle East. His eyes, like a gypsy's chant, met Farida's, and
+                            without a word, he beckoned her to follow. The turban on his head hinted at a silent wisdom,
+                            a relic from the days when Persia was a tapestry of cultures and influences.<br><br>
+    
+                            The journey led them beyond the market, through hidden paths and forgotten corners,
+                            reminiscent of the time when the Seljuk Empire stretched across the region. The stranger's
+                            eyes, their color deepening with the shifting hues of the day, spoke of stories untold and
+                            mysteries yet to unfold. Farida couldn't help but notice the concealed hilt of a dagger at
+                            his side—a symbol of the asymmetric warfare known to the <b>Fida'is</b> , the secret society
+                            devoted
+                            to Nizari Isma'ilism.</p>
                     <img src="images/Saladin3.jfif" class="img-fluid" alt="" srcset="">
                 </div>
-                <div class="col-md-4 bg-dark align-items-center justify-content-center">
-                    <p>In the midst of the labyrinth, the masked stranger emerged again from the shadows, a figure
-                        cloaked in the history of the Middle East. His eyes, like a gypsy's chant, met Farida's, and
-                        without a word, he beckoned her to follow. The turban on his head hinted at a silent wisdom,
-                        a relic from the days when Persia was a tapestry of cultures and influences.<br><br>
-
-                        The journey led them beyond the market, through hidden paths and forgotten corners,
-                        reminiscent of the time when the Seljuk Empire stretched across the region. The stranger's
-                        eyes, their color deepening with the shifting hues of the day, spoke of stories untold and
-                        mysteries yet to unfold. Farida couldn't help but notice the concealed hilt of a dagger at
-                        his side—a symbol of the asymmetric warfare known to the <b>Fida'is</b> , the secret society
-                        devoted
-                        to Nizari Isma'ilism.</p>
-                </div>
-                <div class="col-md-5 bg-dark align-items-center justify-content-center">
+                <div class="col-md-6 bg-dark align-items-center justify-content-center py-5">
                     <p>At the edge of the city, where the clamor of the market faded into the whispers of the wind,
                         the stranger halted. His eyes, now bathed in the warm glow of the setting sun, conveyed a
                         sense of purpose. Without revealing his name, he spoke of a place called Alamut—a fortress
@@ -201,11 +209,16 @@
         </div>
     </section>
 
-
-    <div class="img-fluid" id="cinema" name="./videos/oppenheimer.mp4">
+    <div class="container-fluid m-0 p-0">
+        <div class="row">
+            <div class="col-md-12 video">
+                <div id="cinema" name="./videos/oppenheimer.mp4">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid bg-dark text-secondary">
 
         <div id='languages' class="column">
             <h2>Languages</h2>
@@ -238,7 +251,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid bg-dark text-secondary  ">
         <div id='memory' class="column">
             <h2>Memory</h2>
             <ul>
@@ -259,16 +272,23 @@
 
     <!-- footer section -->
     <footer class="p-5 bg-dark text-white text-center postion-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy. Designed by JvR</p>
+        <div id="footer"  class="container">
+            <p class="footernote">Copyright &copy, 2023. Designed by JvR</p>
             <a href="#" class="positon-absolute bottom-0 end-0 p-5 text-light">
                 <h1><i class="bi bi-arrow-up-circle"></i></h1>
             </a>
         </div>
     </footer>
-    <script src="./js/scroll.js"></script>
     <script src="./js/classes.js"></script>
     <script src="./js/canvaser.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navmenu").hide();
+            $("#burger").click(function () {
+                $("#navmenu").slideToggle(400);
+            });
+        });
+    </script>
 </body>
 
 </html>
