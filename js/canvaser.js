@@ -1,7 +1,10 @@
 // Initialize variables
 document.addEventListener("DOMContentLoaded", () => {
+    max_width = document.documentElement.clientWidth;
+    max_height = max_width/1.6;
 let image = new Image();
 image.src = './images/peakpx.jpg';
+image.classList.add('imgCenter');
 let priority = 'particles';
 
 Particles = []
@@ -9,13 +12,19 @@ Particles = []
 
 // Create a video element and set its source
 let video = document.createElement('video');
+video.classList.add('video');
 const parent = document.getElementById('cinema');
 video.src = parent.getAttribute('name'); // Replace 'your_video.mp4' with the video file you want to display
 
 image.onload = () => {
     let canvas = document.createElement('canvas');
-    canvas.width = image.width;
+    canvas.width = image.width;    
     canvas.height = image.height;
+
+    if (image.width>max_width){
+        canvas.width = max_width;
+        canvas.height = max_height;
+    }
     for (let i = 0; i<300;i++){
         Particles.push(new Particle(canvas))
     }
@@ -29,7 +38,7 @@ image.onload = () => {
         switch (priority) {
             case 'particles':
                 c.fillStyle = 'black';
-                c.fillRect(0, 0, 1024, 576);
+                c.fillRect(0, 0, canvas.width, canvas.height);
                 c.drawImage(image, 0, 0);
                 Particles.forEach(particle => {
                     particle.draw(c)
@@ -47,7 +56,7 @@ image.onload = () => {
 
     animate();
 
-    window.addEventListener('mousedown', () => {
+    canvas.addEventListener('mousedown', () => {
         if (priority === 'particles') {
             priority = 'video';
             video.play();
