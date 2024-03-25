@@ -45,7 +45,7 @@
             </div>
             <div id="navmenu" class="row p-5">
                 <div class="col-md-12">
-                    <div >
+                    <div>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a href="./contacts.html" class="nav-link">Contact</a></li>
                             <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
@@ -157,9 +157,10 @@
             <div class="row">
                 <div class="column"><img src="./images/Khan.jfif" alt="" class="img-fluid"></div>
                 <div class="column">
-                    <h1>Cold Winter</h1>
+                    <h1 id="songTitle">No Mercy</h1>
                     <p>The nazaris were only defeated by the great Khan</p>
-                    <audio controls autoplay loop>
+                    <audio id="myAudio" controls autoplay>
+                        <source src="music/noMercy.mp3">
                         <source src="music/blood-brothers.mp3">
                         <source src="music/cold-winter.mp3">
                     </audio>
@@ -172,18 +173,18 @@
                         by the memory of the mysterious encounter in the market. As she weaved through the narrow
                         streets, the colorful fabrics hanging from stalls seemed to dance in rhythm with her
                         contemplation.</p>
-                        <p>In the midst of the labyrinth, the masked stranger emerged again from the shadows, a figure
-                            cloaked in the history of the Middle East. His eyes, like a gypsy's chant, met Farida's, and
-                            without a word, he beckoned her to follow. The turban on his head hinted at a silent wisdom,
-                            a relic from the days when Persia was a tapestry of cultures and influences.<br><br>
-    
-                            The journey led them beyond the market, through hidden paths and forgotten corners,
-                            reminiscent of the time when the Seljuk Empire stretched across the region. The stranger's
-                            eyes, their color deepening with the shifting hues of the day, spoke of stories untold and
-                            mysteries yet to unfold. Farida couldn't help but notice the concealed hilt of a dagger at
-                            his side—a symbol of the asymmetric warfare known to the <b>Fida'is</b> , the secret society
-                            devoted
-                            to Nizari Isma'ilism.</p>
+                    <p>In the midst of the labyrinth, the masked stranger emerged again from the shadows, a figure
+                        cloaked in the history of the Middle East. His eyes, like a gypsy's chant, met Farida's, and
+                        without a word, he beckoned her to follow. The turban on his head hinted at a silent wisdom,
+                        a relic from the days when Persia was a tapestry of cultures and influences.<br><br>
+
+                        The journey led them beyond the market, through hidden paths and forgotten corners,
+                        reminiscent of the time when the Seljuk Empire stretched across the region. The stranger's
+                        eyes, their color deepening with the shifting hues of the day, spoke of stories untold and
+                        mysteries yet to unfold. Farida couldn't help but notice the concealed hilt of a dagger at
+                        his side—a symbol of the asymmetric warfare known to the <b>Fida'is</b> , the secret society
+                        devoted
+                        to Nizari Isma'ilism.</p>
                     <img src="images/Saladin3.jfif" class="img-fluid" alt="" srcset="">
                 </div>
                 <div class="col-md-6 bg-dark align-items-center justify-content-center py-5">
@@ -272,7 +273,7 @@
 
     <!-- footer section -->
     <footer class="p-5 bg-dark text-white text-center postion-relative">
-        <div id="footer"  class="container">
+        <div id="footer" class="container">
             <p class="footernote">Copyright &copy, 2023. Designed by JvR</p>
             <a href="#" class="positon-absolute bottom-0 end-0 p-5 text-light">
                 <h1><i class="bi bi-arrow-up-circle"></i></h1>
@@ -287,6 +288,47 @@
             $("#burger").click(function () {
                 $("#navmenu").slideToggle(400);
             });
+
+
+            //music
+            var audio = $('#myAudio')[0]; // Get the DOM element of the audio
+            console.log(audio);
+            var songInfo = [
+                { title: "No Mercy", description: "Description for No Mercy" },
+                { title: "Blood Brothers", description: "Description for Blood Brothers" },
+                { title: "Cold Winter", description: "The nazaris were only defeated by the great Khan" }
+            ]; // Array of song titles and descriptions
+            var currentIndex = 2; // Index of the currently playing song
+
+            // Update the song title and description
+            $('#songTitle').text(songInfo[currentIndex].title);
+            console.log($('#songTitle'));
+            $('#songDescription').text(songInfo[currentIndex].description);
+
+            // Listen to the 'ended' event
+            $(audio).on('ended', function () {
+                // Get the next source element
+                var nextSource = $('source[selected]', audio).next('source');
+                if (nextSource.length == 0) {
+                    // If there's no next source, loop back to the first one
+                    nextSource = $('source', audio).first();
+                    currentIndex = 0;
+                } else {
+                    currentIndex++;
+                }
+                // Update the song title and description
+                $('#songTitle').text(songInfo[currentIndex].title);
+                $('#songDescription').text(songInfo[currentIndex].description);
+                // Change the 'src' attribute to the next source
+                $(audio).attr('src', nextSource.attr('src'));
+                // Load and play the new source
+                audio.load();
+                audio.play();
+            });
+
+
+
+
         });
     </script>
 </body>
