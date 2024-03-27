@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#000000</string>
+  <key>expanded</key><true/>
+  <key>nodeid</key><string>c6633473-4dd0-43ad-b80e-6a70228d062f</string>
+  <key>modified_time</key><integer>1708788691</integer>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1708788691</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>Files</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#bfbfbf</string>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

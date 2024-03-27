@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>New Folder</string>
+  <key>nodeid</key><string>c738e564-add8-444d-a824-66ad3bf02eec</string>
+  <key>modified_time</key><integer>1707587190</integer>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#ff9999</string>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1707587190</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>1</integer>
+  <key>info_sort</key><string>order</string>
+  <key>icon</key><string>note-violet.png</string>
+</dict>
+</node>

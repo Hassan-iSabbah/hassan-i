@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#00ffff</string>
+  <key>duplicate_of</key><string>e16bb6a2-90a9-4efe-8921-f542e0f5bc2c</string>
+  <key>title</key><string>Interface</string>
+  <key>nodeid</key><string>e142bae2-0252-45e0-9bfb-dfdf91791651</string>
+  <key>modified_time</key><integer>1710260743</integer>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#000000</string>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1710232324</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>20</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>
