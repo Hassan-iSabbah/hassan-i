@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#00ffff</string>
+  <key>duplicate_of</key><string>91ceff8b-ca08-4d67-9628-6318905cc3de</string>
+  <key>nodeid</key><string>bc929356-cc4f-47ee-9aa5-be3e58f514c8</string>
+  <key>modified_time</key><integer>1710259613</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1710232324</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>Autoloader</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#000000</string>
+  <key>order</key><integer>3</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

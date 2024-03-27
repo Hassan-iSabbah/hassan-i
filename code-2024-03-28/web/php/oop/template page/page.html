@@ -1,0 +1,49 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>template page</title>
+</head><body><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #569cd6">&lt;?php</span><br/>
+<span style="color: #c586c0">include</span><span style="color: #ce9178">'includes/class-autoload.inc.php'</span>;<br/>
+<span style="color: #9cdcfe">$css</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">'<br/>
+</span><span style="color: #ce9178"> body {<br/>
+  font-family: &quot;Heading&quot;;<br/>
+  position: relative;<br/>
+  min-height: 100vh;<br/>
+  padding-top: 30vh;<br/>
+  padding-bottom: 10vh;<br/>
+  color: #ffffff;<br/>
+  background-color: rgba(0, 0, 0, 0.78);<br/>
+</span><span style="color: #ce9178"> }</span><br/>
+<span style="color: #ce9178"> body::after {<br/>
+  content: &quot;&quot;;<br/>
+  position: absolute;<br/>
+  top: 0;  left: 0;<br/>
+  width: 100%;<br/>
+  height: 100%;<br/>
+  background-image: url(&quot;img/bulb.jpg&quot;);<br/>
+  background-attachment: fixed;<br/>
+  background-size: cover;<br/>
+  background-position: center;<br/>
+  background-repeat: no-repeat;<br/>
+  opacity: 0.7;<br/>
+  z-index: -1;<br/>
+  transition: all ease-in 300ms;<br/>
+</span><span style="color: #ce9178"> }</span><br/>
+<br/>
+<span style="color: #ce9178"> #welcomeToJamRock {<br/>
+  font-size: 3.5rem;<br/>
+</span><span style="color: #ce9178"> }</span><br/>
+<span style="color: #ce9178"> '</span>;<br/>
+<span style="color: #dcdcaa">echo</span><span style="color: #4ec9b0">Utils</span><span style="color: #d4d4d4">::</span><span style="color: #dcdcaa">get_header</span>(<span style="color: #9cdcfe">$css</span>);<br/>
+<span style="color: #569cd6">?&gt;<br/>
+</span><br/>
+<span style="color: #7ca668">&lt;!-- YOUR CUSTOM PAGE STUFF GOES HERE, make Nadeko object of userContr to handle user input or Ayana an object of UserView to see DB --&gt;</span><br/>
+<br/>
+ <br/>
+<span style="color: #569cd6">&lt;?php<br/>
+</span><span style="color: #9cdcfe">$jq</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">'$(&quot;#welcomeToJamRock&quot;).toggle(2000);'</span>;<br/>
+<span style="color: #dcdcaa">echo</span><span style="color: #4ec9b0">Utils</span><span style="color: #d4d4d4">::</span><span style="color: #dcdcaa">get_footer</span>(<span style="color: #9cdcfe">$jq</span>);<br/>
+<span style="color: #4ec9b0">Utils</span><span style="color: #d4d4d4">::</span><span style="color: #dcdcaa">get_message</span>() <span style="color: #569cd6">?&gt;</span><br/>
+<br/>
+<span style="color: #808080">&lt;/</span><span style="color: #569cd6">body</span><span style="color: #808080">&gt;</span><br/>
+</span></span></span></span><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #808080">&lt;/</span><span style="color: #569cd6">html</span><span style="color: #808080">&gt;</span></span></span></span></span> </body></html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Files_read</title>
+</head><body><span style="font-size: 14pt"><span style="color: #ffffff"><span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #569cd6">&lt;?php</span><span style="color: #c586c0">include</span>(<span style="color: #ce9178">'includes/config.inc.php'</span>);<br/>
+<span style="color: #c586c0">include</span>(<span style="color: #ce9178">'includes/database.inc.php'</span>);<br/>
+<span style="color: #c586c0">include</span>(<span style="color: #ce9178">'includes/functions.inc.php'</span>);<br/>
+<span style="color: #c586c0">include</span>(<span style="color: #ce9178">'includes/headerBig.inc.php'</span>);<span style="color: #569cd6">?&gt;<br/>
+</span><span style="color: #569cd6"><br/>
+</span><span style="color: #808080">&lt;</span><span style="color: #569cd6">div</span><span style="color: #9cdcfe">class</span>=<span style="color: #ce9178">&quot;container p-5 m-0&quot;</span><span style="color: #808080">&gt;<br/>
+</span><span style="color: #808080">&lt;/</span><span style="color: #569cd6">div</span><span style="color: #808080">&gt;<br/>
+</span><span style="color: #808080"><br/>
+</span><span style="color: #808080">&lt;</span><span style="color: #569cd6">div</span><span style="color: #9cdcfe">class</span>=<span style="color: #ce9178">&quot;container bg-secondary text-white align-items-center p-5 m-5&quot;</span><span style="color: #808080">&gt;<br/>
+</span> <span style="color: #808080">&lt;</span><span style="color: #569cd6">div</span><span style="color: #9cdcfe">class</span>=<span style="color: #ce9178">&quot;row&quot;</span><span style="color: #808080">&gt;</span>  <span style="color: #808080">&lt;</span><span style="color: #569cd6">div</span><span style="color: #9cdcfe">class</span>=<span style="color: #ce9178">&quot;col-md-10 offset-md-2&quot;</span><span style="color: #808080">&gt;<br/>
+</span>   <span style="color: #808080">&lt;</span><span style="color: #569cd6">h1</span><span style="color: #808080">&gt;</span>My Files<span style="color: #808080">&lt;/</span><span style="color: #569cd6">h1</span><span style="color: #808080">&gt;<br/>
+</span>   <span style="color: #808080">&lt;</span><span style="color: #569cd6">p</span><span style="color: #9cdcfe">class</span>=<span style="color: #ce9178">&quot;lead&quot;</span><span style="color: #808080">&gt;</span>Upload, replace, backup files that have been uploaded!<span style="color: #808080">&lt;/</span><span style="color: #569cd6">p</span><span style="color: #808080">&gt;<br/>
+</span>  <span style="color: #808080">&lt;/</span><span style="color: #569cd6">div</span><span style="color: #808080">&gt;<br/>
+</span>  <span style="color: #808080">&lt;</span><span style="color: #569cd6">div</span><span style="color: #9cdcfe">class</span>=<span style="color: #ce9178">&quot;col-md-8&quot;</span><span style="color: #808080">&gt;<br/>
+</span>   <span style="color: #569cd6">&lt;?php</span>   <span style="color: #7ca668">// Directory path to the uploads folder<br/>
+</span>   <span style="color: #9cdcfe">$uploadsFolder</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">'uploads/'</span>;<br/>
+   <span style="color: #7ca668">// Get all files in the uploads folder<br/>
+</span>   <span style="color: #9cdcfe">$files</span><span style="color: #d4d4d4">=</span><span style="color: #dcdcaa">scandir</span>(<span style="color: #9cdcfe">$uploadsFolder</span>);<br/>
+   <span style="color: #7ca668">// Exclude &quot;.&quot; and &quot;..&quot; from the list<br/>
+</span>   <span style="color: #9cdcfe">$files</span><span style="color: #d4d4d4">=</span><span style="color: #dcdcaa">array_diff</span>(<span style="color: #9cdcfe">$files</span>, <span style="color: #dcdcaa">array</span>(<span style="color: #ce9178">'.'</span>, <span style="color: #ce9178">'..'</span>));<br/>
+   <span style="color: #7ca668">// Display each file as a link<br/>
+</span>   <span style="color: #c586c0">foreach</span>(<span style="color: #9cdcfe">$files</span><span style="color: #d4d4d4">as</span><span style="color: #9cdcfe">$file</span>) {<br/>
+    <span style="color: #dcdcaa">echo</span><span style="color: #ce9178">'&lt;a href=&quot;'</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$uploadsFolder</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$file</span><span style="color: #d4d4d4">.</span><span style="color: #ce9178">'&quot; target=&quot;_blank&quot;&gt;'</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$file</span><span style="color: #d4d4d4">.</span><span style="color: #ce9178">'&lt;/a&gt;&lt;br&gt;'</span>;<br/>
+    <span style="color: #dcdcaa">echo</span><span style="color: #ce9178">'&lt;a href=&quot;'</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$uploadsFolder</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$file</span><span style="color: #d4d4d4">.</span><span style="color: #ce9178">'&quot; target=&quot;_blank&quot;&gt;'</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$file</span><span style="color: #d4d4d4">.</span><span style="color: #ce9178">'&lt;img src=&quot;'</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$file</span><span style="color: #d4d4d4">.</span><span style="color: #ce9178">'&quot;&gt;&lt;/a&gt;&lt;br&gt;'</span>; <span style="color: #569cd6"><br/>
+</span>  <span style="color: #808080">&lt;/</span><span style="color: #569cd6">div</span><span style="color: #808080">&gt;<br/>
+</span> <span style="color: #808080">&lt;/</span><span style="color: #569cd6">div</span><span style="color: #808080">&gt;<br/>
+</span><span style="color: #808080">&lt;/</span><span style="color: #569cd6">div</span><span style="color: #808080">&gt;</span><br/>
+</span></span></span></span> </body></html>

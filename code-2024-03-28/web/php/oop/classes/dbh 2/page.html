@@ -1,0 +1,15 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>dbh</title>
+</head><body><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #569cd6">&lt;?php</span><br/>
+<span style="color: #569cd6">class</span><span style="color: #4ec9b0">Dbh</span>{ <span style="color: #569cd6">private</span><span style="color: #9cdcfe">$host</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;localhost&quot;</span>;<br/>
+ <span style="color: #569cd6">private</span><span style="color: #9cdcfe">$password</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;&quot;</span>;<br/>
+ <span style="color: #569cd6">private</span><span style="color: #9cdcfe">$username</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;root&quot;</span>;<br/>
+ <span style="color: #569cd6">private</span><span style="color: #9cdcfe">$dbName</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;oopphp16&quot;</span>;<br/>
+ <span style="color: #569cd6">protected</span><span style="color: #569cd6">function</span><span style="color: #dcdcaa">connect</span>(){<br/>
+  <span style="color: #9cdcfe">$dsn</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">'mysql:host='</span><span style="color: #d4d4d4">.</span><span style="color: #569cd6">$this</span><span style="color: #d4d4d4">-&gt;</span><span style="color: #9cdcfe">host</span><span style="color: #d4d4d4">.</span><span style="color: #ce9178">';dbname='</span><span style="color: #d4d4d4">.</span><span style="color: #569cd6">$this</span><span style="color: #d4d4d4">-&gt;</span><span style="color: #9cdcfe">dbName</span>;<br/>
+  <span style="color: #9cdcfe">$pdo</span><span style="color: #d4d4d4">=</span><span style="color: #569cd6">new</span><span style="color: #4ec9b0">PDO</span>(<span style="color: #9cdcfe">$dsn</span>,<span style="color: #569cd6">$this</span><span style="color: #d4d4d4">-&gt;</span><span style="color: #9cdcfe">username</span>,<span style="color: #569cd6">$this</span><span style="color: #d4d4d4">-&gt;</span><span style="color: #9cdcfe">password</span>);<br/>
+  <span style="color: #9cdcfe">$pdo</span><span style="color: #d4d4d4">-&gt;</span><span style="color: #dcdcaa">setAttribute</span>(<span style="color: #4ec9b0">PDO</span><span style="color: #d4d4d4">::</span>ATTR_DEFAULT_FETCH_MODE,<span style="color: #4ec9b0">PDO</span><span style="color: #d4d4d4">::</span>FETCH_ASSOC);<br/>
+  <span style="color: #c586c0">return</span><span style="color: #9cdcfe">$pdo</span>;<br/>
+</span></span></span></span><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000"> }}</span></span></span></span> </body></html>

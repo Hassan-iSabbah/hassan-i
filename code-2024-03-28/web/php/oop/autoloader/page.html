@@ -1,0 +1,17 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Autoloader</title>
+</head><body><span style="color: #569cd6"><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000">&lt;?php<br/>
+</span></span></span></span></span><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #dcdcaa">spl_autoload_register</span>(<span style="color: #ce9178">'myAutoLoader'</span>);<br/>
+<br/>
+<span style="color: #569cd6">function</span><span style="color: #dcdcaa">myAutoLoader</span>(<span style="color: #9cdcfe">$className</span>){<br/>
+ <span style="color: #9cdcfe">$url</span><span style="color: #d4d4d4">=</span><span style="color: #9cdcfe">$_SERVER</span>[<span style="color: #ce9178">'HTTP_HOST'</span>]<span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$_SERVER</span>[<span style="color: #ce9178">'REQUEST_URI'</span>];  <br/>
+<span style="color: #c586c0">if</span>(<span style="color: #dcdcaa">strpos</span>(<span style="color: #9cdcfe">$url</span>, <span style="color: #ce9178">'includes'</span>)<span style="color: #d4d4d4">!=</span><span style="color: #569cd6">false</span>){  <br/>
+<span style="color: #9cdcfe">$path</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">'../classes/'</span>;<br/>
+ } <span style="color: #c586c0">else</span>{<br/>
+  <span style="color: #9cdcfe">$path</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;classes/&quot;</span>;<br/>
+   } <span style="color: #9cdcfe">$ext</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;.class.php&quot;</span>;<br/>
+ <span style="color: #9cdcfe">$fullPath</span><span style="color: #d4d4d4">=</span><span style="color: #9cdcfe">$path</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$className</span><span style="color: #d4d4d4">.</span><span style="color: #9cdcfe">$ext</span>;<br/>
+ <span style="color: #c586c0">require_once</span><span style="color: #9cdcfe">$fullPath</span>;<br/>
+</span></span></span></span><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000">};</span></span></span></span> </body></html>
