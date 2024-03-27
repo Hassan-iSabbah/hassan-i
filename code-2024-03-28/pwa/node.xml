@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>expanded</key><true/>
+  <key>nodeid</key><string>ec86ba63-a435-41f9-843a-2b71aa4b6ad7</string>
+  <key>modified_time</key><integer>1707653190</integer>
+  <key>expanded2</key><true/>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1707653190</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>PWA</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#99ff99</string>
+  <key>order</key><integer>4</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

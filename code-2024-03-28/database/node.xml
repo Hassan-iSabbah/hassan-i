@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#000000</string>
+  <key>expanded</key><true/>
+  <key>nodeid</key><string>e8e5da1c-0d0a-409e-9971-1d854cd42d17</string>
+  <key>modified_time</key><integer>1708621743</integer>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1708621743</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>icon</key><string>heart.png</string>
+  <key>title</key><string>Database</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#ff0000</string>
+  <key>order</key><integer>3</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

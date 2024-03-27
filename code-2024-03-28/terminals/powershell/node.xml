@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#7f007f</string>
+  <key>duplicate_of</key><string>bd15afa6-55e2-4586-b260-2fe7c24727db</string>
+  <key>nodeid</key><string>f7891d34-e2b1-4e7a-98f3-d5a758213290</string>
+  <key>modified_time</key><integer>1706253258</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1706010171</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>Powershell</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#ffff99</string>
+  <key>order</key><integer>1</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

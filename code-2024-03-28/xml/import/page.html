@@ -1,0 +1,24 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Import</title>
+</head><body><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #dcdcaa">$</span>(<span style="color: #9cdcfe">document</span>).<span style="color: #dcdcaa">ready</span>(<span style="color: #569cd6">function</span>(){ <span style="color: #dcdcaa">conversationData</span>();});<br/>
+<br/>
+<span style="color: #569cd6">function</span><span style="color: #dcdcaa">conversationData</span>() {<br/>
+ <span style="color: #9cdcfe">$</span>.<span style="color: #dcdcaa">ajax</span>({<br/>
+  <span style="color: #9cdcfe">url:</span><span style="color: #ce9178">&quot;./xml/conversation_1709461434.xml&quot;</span>,<br/>
+  <span style="color: #9cdcfe">dataType:</span><span style="color: #ce9178">&quot;xml&quot;</span>,<br/>
+  <span style="color: #dcdcaa">success</span><span style="color: #9cdcfe">:</span><span style="color: #569cd6">function</span>(<span style="color: #9cdcfe">data</span>) {<br/>
+   <span style="color: #9cdcfe">console</span>.<span style="color: #dcdcaa">log</span>(<span style="color: #ce9178">&quot;found the file baby&quot;</span>);<br/>
+   <span style="color: #dcdcaa">$</span>(<span style="color: #ce9178">&quot;ul&quot;</span>).<span style="color: #dcdcaa">children</span>().<span style="color: #dcdcaa">remove</span>();<br/>
+   <span style="color: #dcdcaa">$</span>(<span style="color: #9cdcfe">data</span>).<span style="color: #dcdcaa">find</span>(<span style="color: #ce9178">&quot;message&quot;</span>).<span style="color: #dcdcaa">each</span>(<br/>
+    <span style="color: #7ca668">/* Do this for EACH of the messages */<br/>
+</span>    <span style="color: #569cd6">function</span>() {<br/>
+     <span style="color: #569cd6">var</span><span style="color: #9cdcfe">info</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;&lt;li&gt;text: &quot;</span><span style="color: #d4d4d4">+</span><span style="color: #dcdcaa">$</span>(<span style="color: #569cd6">this</span>).<span style="color: #dcdcaa">find</span>(<span style="color: #ce9178">&quot;text&quot;</span>).<span style="color: #dcdcaa">text</span>() <span style="color: #d4d4d4">+</span><span style="color: #ce9178">&quot;&lt;/li&gt;&lt;li&gt;message type: &quot;</span><span style="color: #d4d4d4">+<br/>
+</span>      <span style="color: #dcdcaa">$</span>(<span style="color: #569cd6">this</span>).<span style="color: #dcdcaa">find</span>(<span style="color: #ce9178">&quot;messageType&quot;</span>).<span style="color: #dcdcaa">text</span>() <span style="color: #d4d4d4">+</span><span style="color: #ce9178">&quot;&lt;/li&gt;&lt;li&gt;time delay:&quot;</span><span style="color: #d4d4d4">+</span><span style="color: #dcdcaa">$</span>(<span style="color: #569cd6">this</span>).<span style="color: #dcdcaa">find</span>(<span style="color: #ce9178">&quot;time&quot;</span>).<span style="color: #dcdcaa">text</span>() <span style="color: #d4d4d4">+</span><span style="color: #ce9178">&quot;&lt;/li&gt;&quot;</span>;<br/>
+          <span style="color: #dcdcaa">$</span>(<span style="color: #ce9178">&quot;ul&quot;</span>).<span style="color: #dcdcaa">append</span>(<span style="color: #9cdcfe">info</span>);<br/>
+    });<br/>
+  }<br/>
+ });<br/>
+}<br/>
+</span></span></span></span> </body></html>

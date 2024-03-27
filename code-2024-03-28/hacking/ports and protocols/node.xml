@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#ff0000</string>
+  <key>duplicate_of</key><string>77edd730-65ba-4a29-8b7a-5628c044061e</string>
+  <key>title</key><string>Ports and protocols</string>
+  <key>nodeid</key><string>6dba009b-4f9e-4615-ace9-023fb721cbd3</string>
+  <key>modified_time</key><integer>1708789203</integer>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#000000</string>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1708627300</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>3</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>
