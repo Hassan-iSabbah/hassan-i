@@ -1,0 +1,16 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>register</title>
+</head><body><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #ffffff"><span style="color: #808080">&lt;</span><span style="color: #569cd6">script</span><span style="color: #808080">&gt;<br/>
+</span>  <span style="color: #c586c0">if</span>(<span style="color: #ce9178">'serviceWorker'</span><span style="color: #569cd6">in</span><span style="color: #9cdcfe">navigator</span>){<br/>
+  <span style="color: #9cdcfe">window</span>.<span style="color: #dcdcaa">addEventListener</span>(<span style="color: #ce9178">'load'</span>, ()<span style="color: #569cd6">=&gt;</span>{   <span style="color: #9cdcfe">navigator</span>.<span style="color: #9cdcfe">serviceWorker</span>.<span style="color: #dcdcaa">register</span>(<span style="color: #ce9178">'./serviceworker.js'</span>)<br/>
+   .<span style="color: #dcdcaa">then</span>((<span style="color: #9cdcfe">reg</span>)<span style="color: #569cd6">=&gt;</span>{<br/>
+   <span style="color: #9cdcfe">console</span>.<span style="color: #dcdcaa">log</span>(<span style="color: #ce9178">'success'</span>,<span style="color: #9cdcfe">reg</span>.<span style="color: #9cdcfe">scope</span>)<br/>
+   })<br/>
+   .<span style="color: #dcdcaa">catch</span>((<span style="color: #9cdcfe">err</span>)<span style="color: #569cd6">=&gt;</span>{<br/>
+   <span style="color: #9cdcfe">console</span>.<span style="color: #dcdcaa">log</span>(<span style="color: #ce9178">'failure'</span>,<span style="color: #9cdcfe">err</span>)<br/>
+   })<br/>
+  })<br/>
+  } <br/>
+</span></span></span></span><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #ffffff"><span style="color: #808080">&lt;/</span><span style="color: #569cd6">script</span><span style="color: #808080">&gt;</span></span></span></span></span> </body></html>

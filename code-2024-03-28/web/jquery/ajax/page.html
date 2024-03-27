@@ -1,0 +1,43 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>ajax</title>
+</head><body><b><i><span style="font-size: 35pt"><span style="font-family: monospace">$(&quot;btnGetInformation&quot;).click(function (){<ul><li style="list-style-type: none"><ul><li style="list-style-type: none"/>
+<li style="list-style-type: none">DOWNLOAD SHIT</li>
+<li style="list-style-type: none">$.get(&quot;url&quot;)</li>
+<li style="list-style-type: none"/>
+<li style="list-style-type: none">UPLOAD SHIT</li>
+<li style="list-style-type: none">$.post(&quot;url&quot;)</li>
+<li style="list-style-type: none"/>
+<li style="list-style-type: none"/>
+</ul>
+</li>
+</ul>
+})<br/>
+<br/>
+$(document).ready(function () {<br/>
+  // Initially, load the short content<br/>
+  loadContent('short-content.txt');<br/>
+<br/>
+  // Handle &quot;Read more&quot; button click<br/>
+  $('#read-more-btn').on('click', function () {<br/>
+    // Load the long content when the button is clicked<br/>
+    loadContent('long-content.txt');<br/>
+  });<br/>
+});<br/>
+<br/>
+function loadContent(filename) {<br/>
+  $.ajax({<br/>
+    url: './ajax/' + filename,<br/>
+    type: 'GET',<br/>
+    dataType: 'text',<br/>
+    success: function (data) {<br/>
+      $('#content').html('&lt;p id=&quot;short-content&quot;&gt;' + data + '&lt;/p&gt;');<br/>
+    },<br/>
+    error: function () {<br/>
+      console.error('Error loading content.');<br/>
+    }<br/>
+  });<br/>
+}<br/>
+<br/>
+</span></span></i></b></body></html>

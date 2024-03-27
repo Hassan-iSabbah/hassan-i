@@ -1,0 +1,59 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>DOM</title>
+</head><body><span style="font-family: monospace"><span style="font-size: 54pt">SELECTORS</span><span style="font-size: 35pt"><br/>
+</span><span style="font-size: 35pt"><br/>
+$ are js variables grabbed by DOM.<br/>
+<br/>
+$(identifier)<br/>
+<br/>
+then you can add a function into one of its events<br/>
+<br/>
+$(&quot;#body&quot;).click(function(){<ul><li style="list-style-type: none">alert(&quot;do something&quot;);</li>
+</ul>
+});<br/>
+<br/>
+<br/>
+<br/>
+You can work with the current object inside its event handler by referencing the selector: $(this)<br/>
+EG $(this).hide();<br/>
+<br/>
+</span><u><span style="font-size: 51pt"><div style="text-align: center">POPULAR EVENTS(camel-Naming-Convention)</div></span></u><span style="font-size: 35pt"><br/>
+</span><span style="font-size: 35pt">selector.hover()<br/>
+selector.click()<br/>
+selector.dblclick()<br/>
+selector.mouseout()<br/>
+<br/>
+$(document).keypress(function(e){<ul><li style="list-style-type: none"/>
+</ul>
+})<br/>
+<br/>
+</span></span><img src="toggle.png"/><span style="font-family: monospace"><span style="font-size: 35pt"><br/>
+</span></span><span style="font-family: monospace"><span style="font-size: 35pt">toggle will switch some element to show/hide.<br/>
+Can pass a time interval in ms inside these <i><b>three methods<br/>
+</b></i><i><b><br/>
+Callback is when something is done after the effects have loaded.<br/>
+<br/>
+function(){<br/>
+<br/>
+$(nav).fadeIn()<ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none">.fadeOut()</li>
+<li style="list-style-type: none">.fadeToggle()</li>
+<li style="list-style-type: none">.slideToggle()</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+}<br/>
+<br/>
+<br/>
+Change HTML element : : : : : : : : <br/>
+$().val<br/>
+$().text<br/>
+$().attr(&quot;src&quot;,image);<br/>
+$().html*&amp;*</b></i></span></span></body></html>

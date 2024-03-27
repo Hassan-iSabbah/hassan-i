@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#00ffff</string>
+  <key>duplicate_of</key><string>b2b5d341-211d-4148-a5e5-0f92a410f733</string>
+  <key>nodeid</key><string>ed7be68d-8fcb-4365-91a0-d43c117eb9dd</string>
+  <key>modified_time</key><integer>1707918563</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1707918284</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>icon</key><string>question.png</string>
+  <key>title</key><string>Todo</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#000000</string>
+  <key>order</key><integer>3</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

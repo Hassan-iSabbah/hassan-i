@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#00ffff</string>
+  <key>nodeid</key><string>f6e00446-cc12-46d6-b892-bbe3d7be0008</string>
+  <key>modified_time</key><integer>1706865258</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1706864649</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>icon</key><string>question.png</string>
+  <key>title</key><string>websockets</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#000000</string>
+  <key>order</key><integer>4</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

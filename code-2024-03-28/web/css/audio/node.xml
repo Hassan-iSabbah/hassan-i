@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#00ff00</string>
+  <key>title</key><string>audio</string>
+  <key>nodeid</key><string>325a287a-1b4e-4e50-9590-7e62b415eb35</string>
+  <key>modified_time</key><integer>1708880853</integer>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#7f7f00</string>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1708811819</integer>
+  <key>order</key><integer>3</integer>
+</dict>
+</node>

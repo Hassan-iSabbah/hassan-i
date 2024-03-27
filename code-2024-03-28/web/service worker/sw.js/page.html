@@ -1,0 +1,40 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>sw.js</title>
+</head><body><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #ffffff"><span style="color: #569cd6">const</span><span style="color: #9cdcfe">CACHE_NAME</span><span style="color: #d4d4d4">=</span><span style="color: #ce9178">&quot;version-1&quot;</span>;<br/>
+<span style="color: #569cd6">const</span><span style="color: #9cdcfe">urlsToCache</span><span style="color: #d4d4d4">=</span>[ <span style="color: #ce9178">'index.html'</span>, <span style="color: #ce9178">'offline.html'</span>];<br/>
+<span style="color: #569cd6">const</span><span style="color: #9cdcfe">self</span><span style="color: #d4d4d4">=</span><span style="color: #569cd6">this</span>;<br/>
+<br/>
+<span style="color: #7ca668">// Install SW<br/>
+</span><span style="color: #9cdcfe">self</span>.<span style="color: #dcdcaa">addEventListener</span>(<span style="color: #ce9178">'install'</span>, (<span style="color: #9cdcfe">event</span>) <span style="color: #569cd6">=&gt;</span>{<br/>
+ <span style="color: #9cdcfe">event</span>.<span style="color: #dcdcaa">waitUntil</span>(<br/>
+  <span style="color: #9cdcfe">caches</span>.<span style="color: #dcdcaa">open</span>(<span style="color: #9cdcfe">CACHE_NAME</span>)<br/>
+   .<span style="color: #dcdcaa">then</span>((<span style="color: #9cdcfe">cache</span>) <span style="color: #569cd6">=&gt;</span>{<br/>
+    <span style="color: #9cdcfe">console</span>.<span style="color: #dcdcaa">log</span>(<span style="color: #ce9178">'Opened cache'</span>);<br/>
+    <span style="color: #c586c0">return</span><span style="color: #9cdcfe">cache</span>.<span style="color: #dcdcaa">addAll</span>(<span style="color: #9cdcfe">urlsToCache</span>);<br/>
+   })<br/>
+ )});<br/>
+<br/>
+<br/>
+<span style="color: #7ca668">// Listen for requests<br/>
+</span><span style="color: #9cdcfe">self</span>.<span style="color: #dcdcaa">addEventListener</span>(<span style="color: #ce9178">'fetch'</span>, (<span style="color: #9cdcfe">event</span>) <span style="color: #569cd6">=&gt;</span>{ <span style="color: #9cdcfe">event</span>.<span style="color: #dcdcaa">respondWith</span>(<br/>
+  <span style="color: #9cdcfe">caches</span>.<span style="color: #dcdcaa">match</span>(<span style="color: #9cdcfe">event</span>.<span style="color: #9cdcfe">request</span>)<br/>
+   .<span style="color: #dcdcaa">then</span>(() <span style="color: #569cd6">=&gt;</span>{<br/>
+    <span style="color: #c586c0">return</span><span style="color: #dcdcaa">fetch</span>(<span style="color: #9cdcfe">event</span>.<span style="color: #9cdcfe">request</span>)<br/>
+     .<span style="color: #dcdcaa">catch</span>(() <span style="color: #569cd6">=&gt;</span><span style="color: #9cdcfe">caches</span>.<span style="color: #dcdcaa">match</span>(<span style="color: #ce9178">'offline.html'</span>))<br/>
+   }) )});<br/>
+<br/>
+<br/>
+<span style="color: #7ca668">// Activate the SW<br/>
+</span><span style="color: #9cdcfe">self</span>.<span style="color: #dcdcaa">addEventListener</span>(<span style="color: #ce9178">'activate'</span>, (<span style="color: #9cdcfe">event</span>) <span style="color: #569cd6">=&gt;</span>{<br/>
+ <span style="color: #569cd6">const</span><span style="color: #9cdcfe">cacheWhitelist</span><span style="color: #d4d4d4">=</span>[]; <span style="color: #9cdcfe">cacheWhitelist</span>.<span style="color: #dcdcaa">push</span>(<span style="color: #9cdcfe">CACHE_NAME</span>);<br/>
+ <span style="color: #9cdcfe">event</span>.<span style="color: #dcdcaa">waitUntil</span>(<br/>
+  <span style="color: #9cdcfe">caches</span>.<span style="color: #dcdcaa">keys</span>().<span style="color: #dcdcaa">then</span>((<span style="color: #9cdcfe">cacheNames</span>) <span style="color: #569cd6">=&gt;</span><span style="color: #4ec9b0">Promise</span>.<span style="color: #dcdcaa">all</span>(<br/>
+   <span style="color: #9cdcfe">cacheNames</span>.<span style="color: #dcdcaa">map</span>((<span style="color: #9cdcfe">cacheName</span>) <span style="color: #569cd6">=&gt;</span>{<br/>
+    <span style="color: #c586c0">if</span>(<span style="color: #d4d4d4">!</span><span style="color: #9cdcfe">cacheWhitelist</span>.<span style="color: #dcdcaa">includes</span>(<span style="color: #9cdcfe">cacheName</span>)) {<br/>
+     <span style="color: #c586c0">return</span><span style="color: #9cdcfe">caches</span>.<span style="color: #dcdcaa">delete</span>(<span style="color: #9cdcfe">cacheName</span>);<br/>
+    }<br/>
+   })<br/>
+  )) <br/>
+</span></span></span></span><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #ffffff">)});</span></span></span></span> </body></html>
