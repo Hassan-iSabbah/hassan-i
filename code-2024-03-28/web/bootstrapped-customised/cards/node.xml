@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#000000</string>
+  <key>nodeid</key><string>8390f955-bef8-4c77-827b-6b9d0c837122</string>
+  <key>modified_time</key><integer>1708615551</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1708615551</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>Cards</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#007f7f</string>
+  <key>order</key><integer>5</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

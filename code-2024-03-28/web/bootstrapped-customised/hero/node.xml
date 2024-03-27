@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#000000</string>
+  <key>duplicate_of</key><string>1bc69069-1eb3-4771-bf58-21980087c26a</string>
+  <key>nodeid</key><string>f1888743-cd7b-474c-81b3-ca9cc136cf07</string>
+  <key>modified_time</key><integer>1710705904</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1708615557</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>Hero</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#007f7f</string>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

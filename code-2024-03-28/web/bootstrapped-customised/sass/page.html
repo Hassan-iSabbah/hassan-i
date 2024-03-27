@@ -1,0 +1,53 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Sass</title>
+</head><body><u><span style="font-size: 34pt">Terminal</span></u><br/>
+<span style="font-size: 18pt">npm init =&gt; creates package.json file npm install bootstrap<br/>
+<br/>
+create dir: sass-&gt;main.scss<br/>
+<br/>
+</span><b><u><span style="font-size: 21pt">main.scss</span></u></b><span style="font-size: 18pt"><br/>
+</span><span style="font-size: 18pt"><br/>
+<br/>
+Now reference the variables you want to change and customise<br/>
+Sass shares php variable syntax. Precede variable with a &quot;$&quot;.<br/>
+<br/>
+<br/>
+</span><span style="color: #ffffff"><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #d4d4d4">$primary</span>: <span style="color: #dcdcaa">rgb</span>(<span style="color: #b5cea8">77</span>, <span style="color: #b5cea8">77</span>, <span style="color: #b5cea8">138</span>);<span style="color: #d4d4d4">$secondary</span>: <span style="color: #dcdcaa">rgb</span>(<span style="color: #b5cea8">17</span>, <span style="color: #b5cea8">67</span>, <span style="color: #b5cea8">51</span>);</span></span></span></span> <br/>
+<br/>
+<span style="font-size: 18pt"><br/>
+this line below will created a bootstrap with customised colors. the updating must happen above this line.<br/>
+@import '../node_modules/bootstrap/scss/bootstrap';<br/>
+<br/>
+<br/>
+<u>TO CONFIGURE css DESTINATION <br/>
+<br/>
+</u><span style="font-size: 15pt">Settings-&gt;search for live sass format-&gt;click link &quot;edit in settings.json&quot;<br/>
+<br/>
+find the object braces and replace with this<br/>
+</span></span><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #ffffff">  {   <span style="color: #d4d4d4">&quot;format&quot;</span>: <span style="color: #ce9178">&quot;compressed&quot;</span>,<br/>
+   <span style="color: #d4d4d4">&quot;extensionName&quot;</span>: <span style="color: #ce9178">&quot;.min.css&quot;</span>,<br/>
+</span></span></span></span><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #ffffff">   <span style="color: #d4d4d4">&quot;savePath&quot;</span>: <span style="color: #ce9178">&quot;/css&quot;</span>,  </span></span></span></span><ul><li style="list-style-type: none"><span style="background-color: #000000"><span style="font-family: Consolas"><span style="font-size: 14pt"><span style="color: #ffffff">}</span></span></span></span> </li>
+</ul>
+<span style="font-size: 18pt"><br/>
+<br/>
+</span><div style="text-align: center"><span style="font-size: 24pt">Example <br/>
+<span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #ffffff"><span style="color: #7ca668">/* Override default */</span><span style="color: #d4d4d4">$primary</span>: <span style="color: #ce9178">#1d0662</span>;<br/>
+<span style="color: #d4d4d4">$secondary</span>: <span style="color: #dcdcaa">rgb</span>(<span style="color: #b5cea8">20</span>, <span style="color: #b5cea8">152</span>, <span style="color: #b5cea8">121</span>);<span style="color: #d4d4d4">$light</span>: <span style="color: #ce9178">#dfddd7</span>;<br/>
+<br/>
+<span style="color: #7ca668">/* Import the functions &amp; variables */</span><br/>
+<span style="color: #c586c0">@import</span><span style="color: #ce9178">&quot;../node_modules/bootstrap/scss/functions&quot;</span>;<br/>
+<span style="color: #c586c0">@import</span><span style="color: #ce9178">&quot;../node_modules/bootstrap/scss/variables&quot;</span>;<br/>
+<br/>
+<span style="color: #d4d4d4">$custom-theme-colors</span>: ( <span style="color: #ce9178">&quot;altlight&quot;</span>: <span style="color: #ce9178">#cee8df</span>, <br/>
+<span style="color: #ce9178">&quot;altdark&quot;</span>: <span style="color: #ce9178">#212e92</span>,<br/>
+ <span style="color: #ce9178">&quot;altgold&quot;</span>: <span style="color: #dcdcaa">rgba</span>(<span style="color: #b5cea8">80</span>, <span style="color: #b5cea8">96</span>, <span style="color: #b5cea8">9</span>, <span style="color: #b5cea8">0.258</span>));<br/>
+<span style="color: #d4d4d4">$theme-colors</span>: <span style="color: #dcdcaa">map-merge</span>(<span style="color: #d4d4d4">$custom-theme-colors</span>, <span style="color: #d4d4d4">$theme-colors</span>);<br/>
+<br/>
+</span></span></span><span style="font-family: Consolas"><span style="background-color: #000000"><span style="color: #ffffff"><span style="color: #c586c0">@import</span><span style="color: #ce9178">'../node_modules/bootstrap/scss/bootstrap'</span></span></span></span> <br/>
+<br/>
+Index.html<br/>
+</span></div><div style="text-align: right"><span style="font-size: 18pt">link your head link element to this </span><span style="color: #ffffff"><span style="font-size: 14pt"><span style="font-family: Consolas"><span style="background-color: #000000"> <span style="color: #808080">&lt;</span><span style="color: #569cd6">link</span><span style="color: #9cdcfe">rel</span>=<span style="color: #ce9178">&quot;stylesheet&quot;</span><span style="color: #9cdcfe">href</span>=<span style="color: #ce9178">&quot;css/main.min.css&quot;</span><span style="color: #808080">&gt;</span></span></span></span></span> </div><span style="font-size: 18pt"><br/>
+</span><span style="font-size: 18pt"><br/>
+l</span></body></html>
