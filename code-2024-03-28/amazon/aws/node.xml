@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#ffff00</string>
+  <key>duplicate_of</key><string>11c19da3-c31c-4b3a-9418-7210783d9bfe</string>
+  <key>nodeid</key><string>bc83f53f-5c8f-4920-83f2-0bb29254d26c</string>
+  <key>modified_time</key><integer>1709185434</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1706537050</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>AWS</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#000000</string>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

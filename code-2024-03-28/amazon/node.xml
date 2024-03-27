@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#ffff00</string>
+  <key>expanded</key><true/>
+  <key>duplicate_of</key><string>a971255b-9034-48e0-be2f-9ef488d62f1b</string>
+  <key>nodeid</key><string>d5889ae6-784c-4117-af0a-9834cfd097c6</string>
+  <key>modified_time</key><integer>1706537038</integer>
+  <key>expanded2</key><false/>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1706537038</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>title</key><string>Amazon</string>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#000000</string>
+  <key>order</key><integer>13</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

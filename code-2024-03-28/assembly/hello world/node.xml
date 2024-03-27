@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title_fgcolor</key><string>#ff9999</string>
+  <key>title</key><string>hello world</string>
+  <key>nodeid</key><string>64176866-d55b-4e7d-8070-60af73492e83</string>
+  <key>modified_time</key><integer>1707245931</integer>
+  <key>version</key><integer>6</integer>
+  <key>title_bgcolor</key><string>#0000ff</string>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1707245592</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>0</integer>
+  <key>info_sort</key><string>order</string>
+  <key>icon</key><string>note-orange.png</string>
+</dict>
+</node>
